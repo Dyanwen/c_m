@@ -1,0 +1,1 @@
+"/Applications/wechatwebdevtools.app/Contents/MacOS/cli" cloud functions deploy --e dev-252cba --n quickstartFunctions --r --project "/Users/gongxi/Desktop/c_m" --report_first && "/Applications/wechatwebdevtools.app/Contents/MacOS/cli" cloud functions deploy --e master-5guzvxpa5e0e5faf --n quickstartFunctions --r --project "/Users/gongxi/Desktop/c_m" --report

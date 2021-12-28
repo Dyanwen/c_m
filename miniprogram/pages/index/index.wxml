@@ -1,0 +1,107 @@
+<view class="model" wx:if="{{noserver}}">
+  <image src="../../images/main_s.png"></image>
+  <view class="no_tips">当前小程序无法支持宽屏设备，非常抱歉！</view>
+</view>
+<view bindtouchstart="movepage" bindtouchend="movepage" class="container" wx:else>
+  <view class="model" wx:if="{{spage==0||epage==0}}">
+    <image class="model_img" src="../../images/main_s.png"></image>
+    <view class="top_black"></view>
+    <view class="top_title"><text>{{info.start.title}}</text></view>
+    <view class="top_local"><text>{{info.start.local}}</text></view>
+    <view class="top_time">{{info.start.time}}</view>
+    <view class="top_hold">{{info.start.hold}}</view>
+  </view>
+  <view class="model {{spage!=1?(spage<epage?'model_show':''):(spage<epage?'':'model_hide')}}"
+    wx:if="{{spage==1||epage==1}}">
+    <image class="model_img" src="../../images/main_s.png"></image>
+    <view class="main_title">诚挚邀请</view>
+    <view class="main_entil">INVITATION</view>
+    <view class="invite_title">{{info.invite.title}}</view>
+    <view class="invite_text"><text>{{info.invite.text}}</text></view>
+    <view class="invite_img">
+      <image mode="aspectFit" src="../../images/love.png"></image>
+    </view>
+
+  </view>
+  <!-- <view class="model {{spage!=2?(spage<epage?'model_show':''):(spage<epage?'':'model_hide')}}"
+    wx:if="{{spage==2||epage==2}}">
+    <image class="model_img"  src="../../images/main_s.png"></image>
+    <view style="overflow: auto;">
+      <view class="main_title">许下约定</view>
+      <view class="main_entil">REGISTRATION</view>
+      <view class="form" bindtouchstart="changeno" bindtouchend="changeno" wx:if="{{status==0}}">
+        <view class="form_item" wx:for="{{info.form}}" wx:key="index">
+          <view class="title">{{item.name}}</view>
+          <radio-group bindchange="radioChange" data-key="{{index}}">
+            <label class="radio_item" wx:for="{{item.list}}" wx:key="index" wx:for-item="i">
+              <radio value="{{i}}" color="#cc606c" checked="{{item.check==i}}" />
+              <view>{{i}}</view>
+            </label>
+          </radio-group>
+        </view>
+        <button bindtap="submit">{{info.btntext||'提交'}}</button>
+      </view>
+      <view class="review" wx:if="{{status!=0}}">
+        <image src="{{info.review[status].image}}"></image>
+        <view class="title">{{info.review[status].title}}</view>
+        <view class="des">{{info.review[status].des}}</view>
+        <view class="list" wx:for="{{info.form}}" wx:key="index">{{item.name}}【{{netdata[index]}}】</view>
+      </view>
+    </view>
+  </view> -->
+  <view class="model {{spage!=2?(spage<epage?'model_show':''):(spage<epage?'':'model_hide')}}"
+    wx:if="{{spage==2||epage==2}}">
+    <image src="../../images/main_s.png" class="model_img"></image>
+    <view class="main_title">婚礼流程</view>
+    <view class="main_entil">MEETINGFLOW</view>
+    <view class="metting_model">
+      <view class="line"></view>
+      <view class="item" wx:for="{{info.meeting}}" wx:key="index">
+        <view class="item_text">{{item.time}}</view>
+        <image src="../../images/point.svg"></image>
+        <view class="item_text">{{item.text}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="model {{spage!=3?(spage<epage?'model_show':''):(spage<epage?'':'model_hide')}}"
+    wx:if="{{spage==3||epage==3}}">
+    <image src="../../images/main_s.png" class="model_img"></image>
+    <view class="main_title">地址</view>
+    <view class="main_entil">ADDRESS</view>
+    <map class="map" latitude="{{info.address.point[0]}}" longitude="{{info.address.point[1]}}" enable-3D="true"
+      enable-building="true" markers="{{[info.address.marker]}}" show-location="true"
+      catchregionchange="changeno"></map>
+    <view class="map_line"></view>
+    <view class="address_item">
+      <image src="../../images/map.svg"></image>
+      <view>{{info.address.local}}</view>
+    </view>
+    <view class="address_item">
+      <image src="../../images/time.svg"></image>
+      <view>{{info.address.time}}</view>
+    </view>
+    <view class="address_item">
+      <image src="../../images/tel.svg"></image>
+      <view>{{info.address.tel}}</view>
+    </view>
+  </view>
+  <view class="model {{spage!=4?(spage<epage?'model_show':''):(spage<epage?'':'model_hide')}}"
+    wx:if="{{spage==4||epage==4}}">
+    <image src="../../images/main_s.png" class="model_img"></image>
+    <view class="main_title">会议报名</view>
+    <view class="main_entil">REGISTRATION</view>
+    <view class="form" bindtouchstart="changeno" bindtouchend="changeno" wx:if="{{status==0}}">
+      <view class="form_item" wx:for="{{info.form}}" wx:key="index">
+        <view>{{item.name}}</view>
+        <input bindinput="oninput" data-key="{{index}}" placeholder="{{item.place}}" placeholder-class="place"
+          cursor-spacing="20" />
+      </view>
+      <button bindtap="submit">提交</button>
+    </view>
+    <view class="review">
+      <image src="{{info.review[status].image}}"></image>
+      <view class="title">{{info.review[status].title}}</view>
+      <view class="des">{{info.review[status].des}}</view>
+    </view>
+  </view>
+</view>
