@@ -19,36 +19,12 @@
     <view class="invite_title">{{info.invite.title}}</view>
     <view class="invite_text"><text>{{info.invite.text}}</text></view>
     <view class="invite_img">
-      <image mode="aspectFit" src="../../images/love.png"></image>
+      <image mode="aspectFit"
+        src="https://note.youdao.com/yws/api/personal/file/WEB77ddd59092299292134fbdfeb22db211?method=download&shareKey=2890b757235c439dd6dbbf8154abc595">
+      </image>
     </view>
 
   </view>
-  <!-- <view class="model {{spage!=2?(spage<epage?'model_show':''):(spage<epage?'':'model_hide')}}"
-    wx:if="{{spage==2||epage==2}}">
-    <image class="model_img"  src="../../images/main_s.png"></image>
-    <view style="overflow: auto;">
-      <view class="main_title">许下约定</view>
-      <view class="main_entil">REGISTRATION</view>
-      <view class="form" bindtouchstart="changeno" bindtouchend="changeno" wx:if="{{status==0}}">
-        <view class="form_item" wx:for="{{info.form}}" wx:key="index">
-          <view class="title">{{item.name}}</view>
-          <radio-group bindchange="radioChange" data-key="{{index}}">
-            <label class="radio_item" wx:for="{{item.list}}" wx:key="index" wx:for-item="i">
-              <radio value="{{i}}" color="#cc606c" checked="{{item.check==i}}" />
-              <view>{{i}}</view>
-            </label>
-          </radio-group>
-        </view>
-        <button bindtap="submit">{{info.btntext||'提交'}}</button>
-      </view>
-      <view class="review" wx:if="{{status!=0}}">
-        <image src="{{info.review[status].image}}"></image>
-        <view class="title">{{info.review[status].title}}</view>
-        <view class="des">{{info.review[status].des}}</view>
-        <view class="list" wx:for="{{info.form}}" wx:key="index">{{item.name}}【{{netdata[index]}}】</view>
-      </view>
-    </view>
-  </view> -->
   <view class="model {{spage!=2?(spage<epage?'model_show':''):(spage<epage?'':'model_hide')}}"
     wx:if="{{spage==2||epage==2}}">
     <image src="../../images/main_s.png" class="model_img"></image>
@@ -85,10 +61,10 @@
       <view>{{info.address.tel}}</view>
     </view>
   </view>
-  <view class="model {{spage!=4?(spage<epage?'model_show':''):(spage<epage?'':'model_hide')}}"
+  <!-- <view class="model {{spage!=4?(spage<epage?'model_show':''):(spage<epage?'':'model_hide')}}"
     wx:if="{{spage==4||epage==4}}">
     <image src="../../images/main_s.png" class="model_img"></image>
-    <view class="main_title">会议报名</view>
+    <view class="main_title">许下约定</view>
     <view class="main_entil">REGISTRATION</view>
     <view class="form" bindtouchstart="changeno" bindtouchend="changeno" wx:if="{{status==0}}">
       <view class="form_item" wx:for="{{info.form}}" wx:key="index">
@@ -103,5 +79,6 @@
       <view class="title">{{info.review[status].title}}</view>
       <view class="des">{{info.review[status].des}}</view>
     </view>
-  </view>
+  </view> -->
+  <official-account></official-account>
 </view>

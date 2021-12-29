@@ -271,6 +271,7 @@ page {
   background-image: linear-gradient(270deg, #ce810d 0%, var(--main-color) 100%);
 }
 .address_item {
+  display: flex;
   margin: 0 88rpx 28rpx;
 }
 .address_item image {
@@ -278,7 +279,7 @@ page {
   height: 44rpx;
 }
 .address_item view {
-  margin-left: 70rpx;
+  margin-left: 60rpx;
   font-family: PingFangSC-Regular;
   font-size: 28rpx;
   color: var(--main-color);
