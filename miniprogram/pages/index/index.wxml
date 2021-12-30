@@ -235,7 +235,7 @@
     </view>
     <view class="photos">
         <view class="title">
-            <text>剧照</text>
+            <text>预告片/剧照</text>
             <view class="go-to-all-actors">
                 <text>全部35张</text>
                 <image class="img"
@@ -244,28 +244,18 @@
         </view>
         <view class="photos-list">
             <view class="ul">
-                <view class="left-margin li">
+            <block wx:for="{{photosArr}}" wx:key="{{index}}">
+                <view class="li {{index==0?'':'left-margin'}}">
                     <image class="img"
-                        src="https://note.youdao.com/yws/api/personal/file/WEBa0b740f731666f46391ec929303dd462?method=download&shareKey=11566dcccf27a5f1bad1ef0a422c9ab7"></image>
+                        src="{{item}}"></image>
                 </view>
-                <view class="left-margin li">
-                    <image class="img"
-                        src="https://note.youdao.com/yws/api/personal/file/WEBb2116bf648acd99efc0780ae4423eaf2?method=download&shareKey=3ea96bd1d3fe65dc4a7202b24e941e8c"></image>
-                </view>
-                <view class="left-margin li">
-                    <image class="img"
-                        src="https://note.youdao.com/yws/api/personal/file/WEBa0b740f731666f46391ec929303dd462?method=download&shareKey=11566dcccf27a5f1bad1ef0a422c9ab7"></image>
-                </view>
-                <view class="left-margin li">
-                    <image class="img"
-                        src="https://note.youdao.com/yws/api/personal/file/WEBb2116bf648acd99efc0780ae4423eaf2?method=download&shareKey=3ea96bd1d3fe65dc4a7202b24e941e8c"></image>
-                </view>
+            </block>
             </view>
         </view>
     </view>
     <view class="box-address">
-        <view class="title">
-          <text>婚礼地址</text>
+        <view class="title-center">
+          <text>【 首映 】</text>
         </view>
         <view class="data-box">
             <map class='map' id='myMap' longitude="114.67246882820692" latitude="35.200314320094044" scale="3" show-location="true"></map>
@@ -285,102 +275,56 @@
     </view>
   </view>
   <view class="discussion">
-      <view class="header"><text class="title">讨论</text></view>
+      <view class="header"><text class="title">影评</text></view>
       <view class="comments">
-          <view class="no-padding-top article">
-              <view>
-                  <image class="img avatar"
-                      src="http://p5.itc.cn/images01/20200619/3ba30d993057465984c44517c91456b7.jpeg" width="34"
-                      height="34" ></image>
-              </view>
-              <view class="right">
-                  <view class="top">
-                      <view class="title-container">
-                          <view class="name-box">
-                              <text class="name">易洋千玺</text>
-                          </view>
-                          <view class="commentstar">
-                              <view class="star-wrap">
-                                  <image class="img star-img"
-                                      src="https://note.youdao.com/yws/api/personal/file/WEBe184f491f63505cfc8d5c5d00403deba?method=download&shareKey=624dccfadfbe1495ff65639bbaa5d8a3"></image>
-                                  <image class="img star-img"
-                                      src="https://note.youdao.com/yws/api/personal/file/WEBe184f491f63505cfc8d5c5d00403deba?method=download&shareKey=624dccfadfbe1495ff65639bbaa5d8a3"></image>
-                                  <image class="img star-img"
-                                      src="https://note.youdao.com/yws/api/personal/file/WEBe184f491f63505cfc8d5c5d00403deba?method=download&shareKey=624dccfadfbe1495ff65639bbaa5d8a3"></image>
-                                  <image class="img star-img"
-                                      src="https://note.youdao.com/yws/api/personal/file/WEBe184f491f63505cfc8d5c5d00403deba?method=download&shareKey=624dccfadfbe1495ff65639bbaa5d8a3"></image>
-                                  <image class="img star-img"
-                                      src="https://note.youdao.com/yws/api/personal/file/WEBe184f491f63505cfc8d5c5d00403deba?method=download&shareKey=624dccfadfbe1495ff65639bbaa5d8a3"></image>
-                                  <text class="star-score">10</text>
-                                  <text class="star-word">分</text>
-                              </view>
-                          </view>
-                      </view>
-                      <view class="title-appove">
-                          <view class="hierarchy">
-                              <image class="img thumb-up"
-                                  src="https://note.youdao.com/yws/api/personal/file/WEBb005010d600e3dca27b87084e547ef15?method=download&shareKey=89fdaaaecc8f7c2b72cf3cb7cb161a28"/>
-                              <text class="approve-word">7902</text>
-                          </view>
-                      </view>
-                  </view>
-                  <view class="middle">
-                      <text class="comment-content">世界这么大，人生这么长，总会有个人想让你温柔对待。恭喜你们找到了彼此，往后余生，幸福相伴。 </text>
-                  </view>
-                  <view class="bottom">
-                      <text class="time">11-11</text>
-                      <text class="reply">1306<text>回复</text></text>
-                  </view>
-              </view>
-          </view>
-          <view class="separator-line"></view>
-          <view class="article">
-              <view>
-                  <image class="img avatar"
-                      src="https://p1.ssl.qhimg.com/dmfd/380_472_/t0126cb83ef68bc012d.jpg" width="34"
-                      height="34" ></image>
-              </view>
-              <view class="right">
-                  <view class="top">
-                      <view class="title-container">
-                          <view class="name-box">
-                              <text class="name">胡歌</text>
-                          </view>
-                          <view class="commentstar">
-                              <view class="star-wrap">
-                                  <image class="img star-img"
-                                      src="https://note.youdao.com/yws/api/personal/file/WEBe184f491f63505cfc8d5c5d00403deba?method=download&shareKey=624dccfadfbe1495ff65639bbaa5d8a3"></image>
-                                  <image class="img star-img"
-                                      src="https://note.youdao.com/yws/api/personal/file/WEBe184f491f63505cfc8d5c5d00403deba?method=download&shareKey=624dccfadfbe1495ff65639bbaa5d8a3"></image>
-                                  <image class="img star-img"
-                                      src="https://note.youdao.com/yws/api/personal/file/WEBe184f491f63505cfc8d5c5d00403deba?method=download&shareKey=624dccfadfbe1495ff65639bbaa5d8a3"></image>
-                                  <image class="img star-img"
-                                      src="https://note.youdao.com/yws/api/personal/file/WEBe184f491f63505cfc8d5c5d00403deba?method=download&shareKey=624dccfadfbe1495ff65639bbaa5d8a3"></image>
-                                  <image class="img star-img"
-                                      src="https://note.youdao.com/yws/api/personal/file/WEBe184f491f63505cfc8d5c5d00403deba?method=download&shareKey=624dccfadfbe1495ff65639bbaa5d8a3"></image>
-                                  <text class="star-score">10</text>
-                                  <text class="star-word">分</text>
-                              </view>
-                          </view>
-                      </view>
-                      <view class="title-appove">
-                          <view class="hierarchy">
-                              <image class="img thumb-up"
-                                  src="https://note.youdao.com/yws/api/personal/file/WEBb005010d600e3dca27b87084e547ef15?method=download&shareKey=89fdaaaecc8f7c2b72cf3cb7cb161a28"/>
-                              <text class="approve-word">7902</text>
-                          </view>
-                      </view>
-                  </view>
-                  <view class="middle">
-                      <text class="comment-content">新婚快乐，愿君与另一半共挽同心结一生，共和相思曲一世。 </text>
-                  </view>
-                  <view class="bottom">
-                      <text class="time">11-11</text>
-                      <text class="reply">1306<text>回复</text></text>
-                  </view>
-              </view>
-          </view>
-          <view class="separator-line"></view>
+      <block wx:for="{{comments}}" wx:key="{{item.name}}">
+        <view class="{{!index?'no-padding-top':''}} article">
+            <view>
+                <image class="img avatar"
+                    src="{{item.avatar}}"></image>
+            </view>
+            <view class="right">
+                <view class="top">
+                    <view class="title-container">
+                        <view class="name-box">
+                            <text class="name">{{item.name}}</text>
+                        </view>
+                        <view class="commentstar">
+                            <view class="star-wrap">
+                                <image class="img star-img"
+                                    src="https://note.youdao.com/yws/api/personal/file/WEBe184f491f63505cfc8d5c5d00403deba?method=download&shareKey=624dccfadfbe1495ff65639bbaa5d8a3"></image>
+                                <image class="img star-img"
+                                    src="https://note.youdao.com/yws/api/personal/file/WEBe184f491f63505cfc8d5c5d00403deba?method=download&shareKey=624dccfadfbe1495ff65639bbaa5d8a3"></image>
+                                <image class="img star-img"
+                                    src="https://note.youdao.com/yws/api/personal/file/WEBe184f491f63505cfc8d5c5d00403deba?method=download&shareKey=624dccfadfbe1495ff65639bbaa5d8a3"></image>
+                                <image class="img star-img"
+                                    src="https://note.youdao.com/yws/api/personal/file/WEBe184f491f63505cfc8d5c5d00403deba?method=download&shareKey=624dccfadfbe1495ff65639bbaa5d8a3"></image>
+                                <image class="img star-img"
+                                    src="https://note.youdao.com/yws/api/personal/file/WEBe184f491f63505cfc8d5c5d00403deba?method=download&shareKey=624dccfadfbe1495ff65639bbaa5d8a3"></image>
+                                <text class="star-score">10</text>
+                                <text class="star-word">分</text>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="title-appove">
+                        <view class="hierarchy">
+                            <image class="img thumb-up"
+                                src="https://note.youdao.com/yws/api/personal/file/WEBb005010d600e3dca27b87084e547ef15?method=download&shareKey=89fdaaaecc8f7c2b72cf3cb7cb161a28"/>
+                            <text class="approve-word">{{item.thumb}}</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="middle">
+                    <text class="comment-content">{{item.message}} </text>
+                </view>
+                <view class="bottom">
+                    <text class="time">{{item.time}}</text>
+                    <text class="reply">{{item.reply}}<text>回复</text></text>
+                </view>
+            </view>
+        </view>
+        <view class="separator-line"></view>
+       </block>
       </view>
   </view>
   
@@ -405,9 +349,9 @@
           </view>
       </view>
   </view> -->
-  <!-- <view class="buy-ticket-btn can-buy ">
+ <view class="buy-ticket-btn can-buy ">
       <view class="buy-wrapper">
-          <text class="goto-ticket">特惠购票</text>
+          <text class="goto-ticket">马上预约</text>
       </view>
-  </view> -->
+  </view> 
 </view>

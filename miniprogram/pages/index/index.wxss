@@ -728,7 +728,12 @@
 .box-address .data-box map {
     width: 100%;
 }
-
+.title-center {
+    margin-top: 20rpx;
+    font-size: 40rpx;
+    text-align: center;
+    font-weight: 700;
+}
 .box-office .data-box {
     background-color: #f8f8f8;
     border-radius: 12rpx;
