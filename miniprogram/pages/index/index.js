@@ -2,96 +2,7 @@ const app = getApp() // 全局APP
 let that = null // 页面this指针
 Page({
   data: {
-    spage: 0, // 切换页面开始，勿改
-    epage: 1, // 切换页面结束，勿改
-    status: 0, // 报名状态
-    form: {}, // 报名信息填写
-    info: {
-      start: {
-        title: '年度黑马佳作\n《我们的婚礼》', // 活动名称
-        local: '邀请史上最帅最靓的\n各位亲朋友好友', // 地点
-        time: '2022年01月26日下午13点14分', // 时间
-        hold: '幸福永流传' // 下方的举办方
-      },
-      invite: {
-        title: 'To 我最好的家人朋友', // 邀请对象
-        text: '我知道你平时工作很忙\n但在我们无比重要的这天\n携同我们的父母诚挚的邀\n您以及您的家人出席\n我们的婚礼仪式\n人一生大约有三万多天\n很期待这一天\n您能专为我们而来\n与我们共同分享\n和见证这一美妙时刻！'
-      },
-      meeting: [{ // 会议流程
-        time: '9:00-9:30',
-        text: '嘉宾入场签到'
-      }, {
-        time: '9:30-9:50',
-        text: '云赋能，新开发'
-      }, {
-        time: '9:50-10:10',
-        text: '云时代前端开发的边界拓展'
-      }, {
-        time: '10:10-10:30',
-        text: '茶歇'
-      }, {
-        time: '10:30-10:50',
-        text: '重新定义开发'
-      }, {
-        time: '10:50-11:10',
-        text: '不止小程序，云开发的多场景应用'
-      }, {
-        time: '11:10-11:30',
-        text: '合影留念'
-      }],
-      address: {
-        point: [39.927015684602196, 116.46096798904512], // 地图展示的中心点
-        marker: { // 地图当前标记点
-          id: 0, // 标记点ID，不用变更
-          latitude: 39.927015684602196, // 标记点所在纬度
-          longitude: 116.46096798904512, // 标记点所在经度
-          iconPath: '../../images/show.png', // 标记点图标，png或jpg类型
-          width: '40', // 标记点图标宽度
-          height: '48' // 标记点图标高度
-        },
-        local: '河南省长垣县西西酒店(世博园)', // 地址
-        time: '2022年01月26日', // 举办时间
-        tel: '18848965117' // 联系电话
-      },
-      review: { // 审核信息
-        2: { // 报名成功信息
-          image: '../../images/success.svg',
-          title: '报名成功',
-          des: '云开发发布会期待您的到来'
-        },
-        1: { // 审核中信息
-          image: '../../images/review.svg',
-          title: '审核中',
-          des: '报名信息正在审核中'
-        }
-      },
-      form: { // 报名填写项
-        name: {
-          name: '姓名',
-          place: '请填写您的姓名'
-        },
-        tel: {
-          name: '手机',
-          place: '请填写您的手机号码'
-        },
-        people: {
-          name: '参与人数',
-          place: '请填写参会人数'
-        },
-        retext: {
-          name: '备注',
-          place: '请填写备注'
-        }
-      },
-      btntext: '1024个同意',
-      review: { // 审核信息
-        1: { // 审核中信息
-          image: '../../images/success.svg',
-          title: '提交成功',
-          des: '你已经被我套牢了'
-        }
-      }
-    }
+    images: []
   },
   /**
    * 页面加载
@@ -211,7 +122,7 @@ Page({
   },
   onShareAppMessage() {
     return {
-      title: '胡广豪&邓艳文 婚礼邀请',
+      title: '婚礼邀请函',
       imageUrl: 'https://note.youdao.com/yws/api/personal/file/WEB77ddd59092299292134fbdfeb22db211?method=download&shareKey=2890b757235c439dd6dbbf8154abc595'
     }
   }
