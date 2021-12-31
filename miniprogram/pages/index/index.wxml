@@ -251,19 +251,20 @@
           <text>【 首映 】</text>
         </view>
         <view class="data-box">
-            <map class='map' id='myMap' longitude="114.67246882820692" latitude="35.200314320094044" scale="3" show-location="true"></map>
+            <map class="map" latitude="{{address.point[0]}}" longitude="{{address.point[1]}}" enable-3D="true" enable-building="true" markers="{{[address.marker]}}" show-location="true" catchregionchange="changeno"></map>
+            <view class="map_line"></view>
         </view>
         <view class="header">
             <image src="../../images/map.svg" />
-            <text class="title address">河南省长垣县西西酒店(食博园)</text>
+            <text class="title address">{{address.local}}</text>
         </view>
         <view class="header">
             <image src="../../images/time.svg" />
-            <text class="title tel">2022-01-28 13:14:00</text>
+            <text class="title tel">{{address.time}}</text>
         </view>
         <view class="header">
             <image src="../../images/tel.svg" />
-            <text class="title tel">18848965117</text>
+            <text class="title tel">{{address.tel}}</text>
         </view>
     </view>
   </view>

@@ -727,6 +727,7 @@
 }
 .box-address .data-box map {
     width: 100%;
+    height: 450rpx;
 }
 .title-center {
     margin-top: 20rpx;

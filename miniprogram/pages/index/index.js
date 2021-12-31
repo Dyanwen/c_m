@@ -2,6 +2,19 @@ const app = getApp() // 全局APP
 Page({
   data: {
     images: [],
+    address: {
+      point: [35.200314320094044, 114.67246882820692], // 地图展示的中心点
+      marker: { // 地图当前标记点
+        id: 0, // 标记点ID，不用变更
+        latitude: 35.200314320094044, // 标记点所在纬度
+        longitude: 114.67246882820692, // 标记点所在经度
+        width: '18', // 标记点图标宽度
+        height: '24' // 标记点图标高度
+      },
+      local: '河南省长垣县西西酒店(食博园)', // 地址
+      time: '2022年01月28日', // 举办时间
+      tel: '188 4896 5117' // 联系电话
+    },
     photosArr: [
       "https://note.youdao.com/yws/api/personal/file/WEBa0b740f731666f46391ec929303dd462?method=download&shareKey=11566dcccf27a5f1bad1ef0a422c9ab7",
       "https://note.youdao.com/yws/api/personal/file/WEBb2116bf648acd99efc0780ae4423eaf2?method=download&shareKey=3ea96bd1d3fe65dc4a7202b24e941e8c"
