@@ -212,24 +212,17 @@
         </view>
         <view class="actor-list">
             <view class="ul">
+            <block wx:for="{{actors}}">
                 <view class="li">
                     <image class="img"
-                        src="https://note.youdao.com/yws/api/personal/file/WEB279aeb99c043ce3c055e83d2858d729a?method=download&shareKey=8bd3bbdca02d39fb319002a3f8e1ca18&inline=true"
+                        src="{{item.avatar}}"
                         ></image>
                     <view>
-                      <text class="name">胡广豪</text>
-                      <text class="role">新郎</text>
+                      <text class="name">{{item.name}}</text>
+                      <text class="role">{{item.role}}</text>
                     </view>
                 </view>
-                <view class="left-margin li">
-                    <image class="img"
-                        src="https://note.youdao.com/yws/api/personal/file/WEB12cfead587d219ea4c50d6f41088d414?method=download&shareKey=57b7a6fbcd3941432b7e9c466753ba00"
-                        ></image>
-                    <view>
-                      <text class="name">邓艳文</text>
-                      <text class="role">新娘</text>
-                    </view>
-                </view>
+            </block>
             </view>
         </view>
     </view>

@@ -1,5 +1,4 @@
 const app = getApp() // 全局APP
-let that = null // 页面this指针
 Page({
   data: {
     images: [],
@@ -40,11 +39,7 @@ Page({
    * 页面加载
    */
   onLoad() {
-    that = this // 页面this指向指针变量
-    const { windowHeight, windowWidth } = wx.getSystemInfoSync() // 获取系统屏幕信息
-    that.setData({
-      noserver: (windowWidth / windowHeight) > 0.6 // 如果宽高比大于0.6，则差不多平板感觉，不适合邀请函的UI
-    })
+
     // that.init() // 初始化
   },
   /**
@@ -61,45 +56,6 @@ Page({
         status: result.status, // 将状态存入data，0-未报名，1-报名成功
         netdata: result
       })
-    }
-  },
-  /**
-   * 覆盖全局的上下页切换，用于地图和表单组件中，禁用全局上下翻页
-   * @param {*} e 页面信息
-   */
-  changeno(e) {
-    if (e.type === 'begin' || e.type === 'touchstart') { // 如果触发状态为触摸开始，或者地图移动开始
-      that.no = true // 设置不干预变量为true
-    } else if (e.type === 'end' || e.type === 'touchend') { // 如果触发状态未触摸结束，或地图移动结束
-      setTimeout(function () { // 延迟100ms设置，防止低端机型的线程强占
-        that.no = false // 设置不干预变量为false
-      }, 100)
-    }
-  },
-  /**
-   * 上下翻页
-   * @param {*} e 页面信息
-   */
-  movepage(e) {
-    if (that.no === true) return // 如果不干预变量为true，说明禁用翻页
-    const { clientY } = e.changedTouches[0] // 获取触摸点Y轴位置
-    if (e.type === 'touchstart') { // 如果是触摸开始
-      that.startmove = clientY // 记录一下开始点
-    }
-    if (e.type === 'touchend') { // 如果是触摸结束
-      let { epage } = that.data // 获取data中的结束页
-      const spage = that.data.epage // 将结束页传给开始页，要从这里动作
-      if (that.startmove > clientY) { // 如果触摸点比初次高
-        if (epage < 4) epage++ // 在结束页小于2时加1，因为一共就需翻2页
-      } else if (that.startmove < clientY) { // 如果触摸点比初次低
-        if (epage > 0) epage-- // 在结束页大于0时减1
-      }
-      if (spage !== epage) { // 如果初始页和结束页相同，则证明翻到底了，不同才要改变
-        that.setData({ // 更新存储
-          spage: spage,
-          epage: epage
-        })
-      }
     }
   },
   /**
@@ -154,7 +110,7 @@ Page({
   },
   onShareAppMessage() {
     return {
-      title: '婚礼邀请函',
+      title: '胡广豪&邓艳文的婚礼请柬',
       imageUrl: 'https://note.youdao.com/yws/api/personal/file/WEB77ddd59092299292134fbdfeb22db211?method=download&shareKey=2890b757235c439dd6dbbf8154abc595'
     }
   }
