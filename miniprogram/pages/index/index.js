@@ -16,6 +16,18 @@ Page({
       tel: '188 4896 5117' // 联系电话
     },
     photosArr: [
+      "https://note.youdao.com/yws/api/personal/file/WEBb2116bf648acd99efc0780ae4423eaf2?method=download&shareKey=3ea96bd1d3fe65dc4a7202b24e941e8c",
+      "https://note.youdao.com/yws/api/personal/file/WEB4c911fa57681d0d946c0cff9354d2b1a?method=download&shareKey=43c277fff9495c370470a1e4bef7f11f",
+      "https://note.youdao.com/yws/api/personal/file/WEB8d64a1b911dfe510cdadff235dfc0cf3?method=download&shareKey=6faf641882fdad022ffca014f2d186ec",
+      "https://note.youdao.com/yws/api/personal/file/WEB21af162f362af45b7b124dcbf314815f?method=download&shareKey=78c580a01606ff1916074758f6ba8de5",
+      "https://note.youdao.com/yws/api/personal/file/WEBfa950077e97be62a7dab9f450846abf7?method=download&shareKey=9e6deaa47b6104615257c0445a5e96ed",
+      "https://note.youdao.com/yws/api/personal/file/WEBf4215cb60a8d7a69c985de6941ce822a?method=download&shareKey=e75d85c23969e7d5700ee58e60f76cbb",
+      "https://note.youdao.com/yws/api/personal/file/WEB36eb2b3f077b5fb13de755d29832df48?method=download&shareKey=f47d1c6d52802adb4da9850f10f96008",
+      "https://note.youdao.com/yws/api/personal/file/WEBb164b9791fcc031614ec17f442853694?method=download&shareKey=505d6e7a260814b11c3a3f8973181d0c",
+      "https://note.youdao.com/yws/api/personal/file/WEB20f2fd0ba89139d50eb29210d4e4fd83?method=download&shareKey=2142d212c086c9c1ef0acd2de7158376",
+      "https://note.youdao.com/yws/api/personal/file/WEBfeb77ee4e00019aa5d95d7aadfb96092?method=download&shareKey=e37f6b90ac297e8336c106c2fde42e0e",
+      "https://note.youdao.com/yws/api/personal/file/WEBf1b15299b42c977b6b59a63a9672ee77?method=download&shareKey=df733eb2e962518e27b334de1ca5b60f",
+      "https://note.youdao.com/yws/api/personal/file/WEB1ed69da14d1c2cdc4aa102a3cd6b2f24?method=download&shareKey=14259948091cb63439d49ab1eebf6f65",
       "https://note.youdao.com/yws/api/personal/file/WEBa0b740f731666f46391ec929303dd462?method=download&shareKey=11566dcccf27a5f1bad1ef0a422c9ab7",
       "https://note.youdao.com/yws/api/personal/file/WEBb2116bf648acd99efc0780ae4423eaf2?method=download&shareKey=3ea96bd1d3fe65dc4a7202b24e941e8c"
     ],

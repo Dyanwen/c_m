@@ -1,5 +1,5 @@
 <view class="movie-page">
-  <official-account></official-account>
+<image class="post" src="https://note.youdao.com/yws/api/personal/file/WEB021e9006d8cdc57caa991bcf35af07e7?method=download&shareKey=e8e8872e698f6ac13371209e03f41768" />
   <view class="movie-info" style="background-color:#664D29">
     <view class="crumbs-nav">猫眼电影 > <text>我们的婚礼</text></view>
     <view class="movie-info-top">
@@ -33,13 +33,10 @@
             <image class="img" alt="想看"
               src="https://note.youdao.com/yws/api/personal/file/WEB3d262cb9777183ed5a521878db33c9eb?method=download&shareKey=8e5623be8c526cf77bd11632b8376b9f">
             </image>
-            <text>想看</text>
+            <text>已想看</text>
           </button>
-          <button type="button" class="button want-to-watch">
-            <image class="img" alt="想看"
-              src="https://note.youdao.com/yws/api/personal/file/WEB3d262cb9777183ed5a521878db33c9eb?method=download&shareKey=8e5623be8c526cf77bd11632b8376b9f">
-            </image>
-            <text>想看</text>
+          <button type="button" class="button">
+            <text>已看</text>
           </button>
         </view>
       </view>
@@ -186,31 +183,17 @@
           </view>
       </view>
     </view>
-    <view class="brief-introduction">
-        <view class="title">
-            <text>简介</text>
-            <view class="go-to-all-actors">
-                <text>全部</text>
-                <image class="img"
-                    src="https://note.youdao.com/yws/api/personal/file/WEBec01c7e7a47b58675a6a43aa1c68dc36?method=download&shareKey=b452cce31a8f75b823271e31a48db354" ></image>
-            </view>
-        </view>
+    <view class="brief-introduction mt-36">
         <view class="content height-limit">
-            <view class="normal-line ">
+            <view class="normal-line">
+                <text>故事简介:</text>
                 年年岁岁朝暮间,朝朝暮暮很多年。关于冬天,我们相识于冬天,也决定于冬天完成人生中最重要的一次仪式,似乎冬天都带着温柔,而你恰好也是。我们陪伴着各自的成长,经历彼此的快乐与悲伤,一路走来,有生活里的摩擦,但更多的是甜蜜美好的回忆,我们看到了最好的对方,也成为了最好的自己,生活虽琐碎,但我相信万物可成诗,有所爱,才会让人有所期待。
             </view>
         </view>
     </view>
     <view class="actors">
-        <view class="title">
-            <text>演职人员</text>
-            <view class="go-to-all-actors">
-                <text>全部</text>
-                <image class="img"
-                    src="https://note.youdao.com/yws/api/personal/file/WEBec01c7e7a47b58675a6a43aa1c68dc36?method=download&shareKey=b452cce31a8f75b823271e31a48db354"></image>
-            </view>
-        </view>
         <view class="actor-list">
+            <text class="t">演职人员</text>
             <view class="ul">
             <block wx:for="{{actors}}">
                 <view class="li">
@@ -226,29 +209,71 @@
             </view>
         </view>
     </view>
-    <view class="photos">
-        <view class="title">
-            <text>预告片/剧照</text>
-            <view class="go-to-all-actors">
-                <text>全部35张</text>
-                <image class="img"
-                    src="https://note.youdao.com/yws/api/personal/file/WEBec01c7e7a47b58675a6a43aa1c68dc36?method=download&shareKey=b452cce31a8f75b823271e31a48db354"></image>
-            </view>
+    <view class="photos mt-36">
+        <view class="tit">
+            <text class="tit-name">预告片 / 剧照</text>
         </view>
         <view class="photos-list">
-            <view class="ul">
-            <block wx:for="{{photosArr}}" wx:key="{{index}}">
-                <view class="li {{index==0?'':'left-margin'}}">
-                    <image class="img"
-                        src="{{item}}"></image>
-                </view>
-            </block>
+            <image src="https://note.youdao.com/yws/api/personal/file/WEB8d5f2afc56d30d19e56c26efec0f4d9d?method=download&shareKey=75d739fb7bbaf28bfd518e0a496ee690"/>
+            <text>吾一生之梦想,寻一无人之处,建一木制小屋,与你晨钟暮鼓</text>
+            <image src="https://note.youdao.com/yws/api/personal/file/WEB20f2fd0ba89139d50eb29210d4e4fd83?method=download&shareKey=2142d212c086c9c1ef0acd2de7158376"/>
+            <text>今我长发及腰,十里红妆,凤冠霞帔,惟愿与君白头偕老</text>
+            <image src="https://note.youdao.com/yws/api/personal/file/WEB1ed69da14d1c2cdc4aa102a3cd6b2f24?method=download&shareKey=14259948091cb63439d49ab1eebf6f65"/>
+            <image src="https://note.youdao.com/yws/api/personal/file/WEBf1b15299b42c977b6b59a63a9672ee77?method=download&shareKey=df733eb2e962518e27b334de1ca5b60f"/>
+            <text>往后余生,冷暖有相知,喜乐有分享,同量天地宽,共度日月长</text>
+            <image src="https://note.youdao.com/yws/api/personal/file/WEBf3894e312c715cc95db41eb8ff74b7b8?method=download&shareKey=0d252455e33fb7458009262f673cbb91"/>
+            <view class="w-t">
+                <text>我爱你</text>
+                <text>不光因为你的样子</text>
+                <text>还因为和你在一起时</text>
+                <text>我的样子</text>
+            </view>
+            <image src="https://note.youdao.com/yws/api/personal/file/WEB22abf076cf4de53b0af22b07d699b1a9?method=download&shareKey=f6e37313620195754c9db1775c9d0785"/>
+            <view class="h-t">
+                <text>我爱你</text>
+                <text>不光因为你为我而做的事</text>
+                <text>还因为为了你</text>
+                <text>我能做成的事</text>
+            </view>
+            <image src="https://note.youdao.com/yws/api/personal/file/WEB782d7945e8e8c767d0a3a02e631404ad?method=download&shareKey=80274ac90bb84007d81f3bfa34157d4e"/>
+            <image src="https://note.youdao.com/yws/api/personal/file/WEB238530ff744fb83dd10747d23c099148?method=download&shareKey=3c500e74ce39a32152f8d28bcf7c3130"/>
+            <view class="hw-t">
+                <text>因为你能唤出我最真的那部分</text>
+                <text>因为你穿越我心灵的旷野</text>
+                <text>就像阳光穿透水晶般容易</text>
+                <text>我的傻气,我的弱点</text>
+                <text>在你的目光里 几乎不存在</text>
+                <text>而我心里最柔软的地方</text>
+                <text>却被你的光芒照的通亮</text>
+            </view>
+            <image src="https://note.youdao.com/yws/api/personal/file/WEB0f5d68a80c02c17a64b55bdf709be4c7?method=download&shareKey=76e9b3886dc01c8d28577cd47160ba83"/>
+            <view class="h-t">
+                <text>我喜欢你</text>
+                <text>所以希望你被簇拥包围</text>
+                <text>所以你走的路要繁花盛开</text>
+                <text>要人声鼎沸</text>
+            </view>
+            <image src="https://note.youdao.com/yws/api/personal/file/WEB4907b1b07958970b32d80910add5f045?method=download&shareKey=6e951e498ca0ab9a8e5505196938fcc1"/>
+            <view class="h-t">
+                <text>我看见白日梦的尽头是你</text>
+                <text>从此天光大亮</text>
+                <text>你是我全部的渴望与幻想</text>
+            </view>
+            <image src="https://note.youdao.com/yws/api/personal/file/WEBc8d239c0103a5ca078b211df7aa7e023?method=download&shareKey=21615e4887ef5e9596b94c8c8eb098c5" />
+            <image src="https://note.youdao.com/yws/api/personal/file/WEBcc48d595e215b72570090fe8af8d7a76?method=download&shareKey=43ce27ac85eb551d62192dddfb64b8c0" />
+            <view class="h-t">
+                <text>深深的话</text>
+                <text>我们浅浅地说</text>
+                <text>长长的路</text>
+                <text>我们慢慢地走</text>
+                <text>从心心相印到永结同心</text>
+                <text>你是我心尖上的唯一</text>
             </view>
         </view>
     </view>
-    <view class="box-address">
-        <view class="title-center">
-          <text>【 首映 】</text>
+    <view class="box-address mt-36">
+        <view class="tit">
+            <text class="tit-name">婚礼信息</text>
         </view>
         <view class="data-box">
             <map class="map" latitude="{{address.point[0]}}" longitude="{{address.point[1]}}" enable-3D="true" enable-building="true" markers="{{[address.marker]}}" show-location="true" catchregionchange="changeno"></map>
@@ -321,31 +346,5 @@
        </block>
       </view>
   </view>
-  
-  <!-- <view class="box-office">
-      <view>
-          <view class="header">
-              <text class="title">票房</text>
-          </view>
-          <view class="data-box">
-              <view class="item">
-                  <view class="value">5</view>
-                  <view class="name">昨日排名</view>
-              </view>
-              <view class="item">
-                  <view class="value">13,949</view>
-                  <view class="name">首周票房(万)</view>
-              </view>
-              <view class="item">
-                  <view class="value">88,923</view>
-                  <view class="name">累计票房(万)</view>
-              </view>
-          </view>
-      </view>
-  </view> -->
- <view class="buy-ticket-btn can-buy ">
-      <view class="buy-wrapper">
-          <text class="goto-ticket">马上预约</text>
-      </view>
-  </view> 
+   <official-account></official-account>
 </view>
