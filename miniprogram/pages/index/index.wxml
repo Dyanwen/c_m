@@ -214,30 +214,46 @@
             <text class="tit-name">预告片 / 剧照</text>
         </view>
         <view class="photos-list">
-            <image src="https://note.youdao.com/yws/api/personal/file/WEB8d5f2afc56d30d19e56c26efec0f4d9d?method=download&shareKey=75d739fb7bbaf28bfd518e0a496ee690"/>
-            <text>吾一生之梦想,寻一无人之处,建一木制小屋,与你晨钟暮鼓</text>
-            <image src="https://note.youdao.com/yws/api/personal/file/WEB20f2fd0ba89139d50eb29210d4e4fd83?method=download&shareKey=2142d212c086c9c1ef0acd2de7158376"/>
-            <text>今我长发及腰,十里红妆,凤冠霞帔,惟愿与君白头偕老</text>
-            <image src="https://note.youdao.com/yws/api/personal/file/WEB1ed69da14d1c2cdc4aa102a3cd6b2f24?method=download&shareKey=14259948091cb63439d49ab1eebf6f65"/>
-            <image src="https://note.youdao.com/yws/api/personal/file/WEBf1b15299b42c977b6b59a63a9672ee77?method=download&shareKey=df733eb2e962518e27b334de1ca5b60f"/>
-            <text>往后余生,冷暖有相知,喜乐有分享,同量天地宽,共度日月长</text>
-            <image src="https://note.youdao.com/yws/api/personal/file/WEBf3894e312c715cc95db41eb8ff74b7b8?method=download&shareKey=0d252455e33fb7458009262f673cbb91"/>
-            <view class="w-t">
+            <image src="https://note.youdao.com/yws/api/personal/file/WEB8d5f2afc56d30d19e56c26efec0f4d9d?method=download&shareKey=75d739fb7bbaf28bfd518e0a496ee690" mode="widthFix" />
+            <view class="h-t-l mtb-20">
+                <text>吾一生之梦想</text>
+                <text>寻一无人之处</text>
+                <text>建一木制小屋</text>
+                <text>与你晨钟暮鼓</text>
+            </view>
+            <image src="https://note.youdao.com/yws/api/personal/file/WEB20f2fd0ba89139d50eb29210d4e4fd83?method=download&shareKey=2142d212c086c9c1ef0acd2de7158376" mode="widthFix" />
+            <view class="w-t-l mtb-20">
+                <text>今我长发及腰</text>
+                <text>十里红妆</text>
+                <text>凤冠霞帔</text>
+                <text>惟愿与君白头偕老</text>
+            </view>
+            <image src="https://note.youdao.com/yws/api/personal/file/WEB1ed69da14d1c2cdc4aa102a3cd6b2f24?method=download&shareKey=14259948091cb63439d49ab1eebf6f65" mode="widthFix" />
+            <image src="https://note.youdao.com/yws/api/personal/file/WEBf1b15299b42c977b6b59a63a9672ee77?method=download&shareKey=df733eb2e962518e27b334de1ca5b60f" mode="widthFix" />
+            <view class="w-t mtb-20">
+                <text>往后余生</text>
+                <text>冷暖有相知</text>
+                <text>喜乐有分享</text>
+                <text>同量天地宽</text>
+                <text>共度日月长</text>
+            </view>
+            <image src="https://note.youdao.com/yws/api/personal/file/WEBf3894e312c715cc95db41eb8ff74b7b8?method=download&shareKey=0d252455e33fb7458009262f673cbb91" mode="widthFix" />
+            <view class="h-t-l mtb-20">
                 <text>我爱你</text>
                 <text>不光因为你的样子</text>
                 <text>还因为和你在一起时</text>
                 <text>我的样子</text>
             </view>
-            <image src="https://note.youdao.com/yws/api/personal/file/WEB22abf076cf4de53b0af22b07d699b1a9?method=download&shareKey=f6e37313620195754c9db1775c9d0785"/>
-            <view class="h-t">
+            <image src="https://note.youdao.com/yws/api/personal/file/WEB22abf076cf4de53b0af22b07d699b1a9?method=download&shareKey=f6e37313620195754c9db1775c9d0785" mode="widthFix" />
+            <view class="w-t-l mtb-20">
                 <text>我爱你</text>
                 <text>不光因为你为我而做的事</text>
                 <text>还因为为了你</text>
                 <text>我能做成的事</text>
             </view>
-            <image src="https://note.youdao.com/yws/api/personal/file/WEB782d7945e8e8c767d0a3a02e631404ad?method=download&shareKey=80274ac90bb84007d81f3bfa34157d4e"/>
-            <image src="https://note.youdao.com/yws/api/personal/file/WEB238530ff744fb83dd10747d23c099148?method=download&shareKey=3c500e74ce39a32152f8d28bcf7c3130"/>
-            <view class="hw-t">
+            <image src="https://note.youdao.com/yws/api/personal/file/WEB238530ff744fb83dd10747d23c099148?method=download&shareKey=3c500e74ce39a32152f8d28bcf7c3130" mode="widthFix" />
+            <image src="https://note.youdao.com/yws/api/personal/file/WEB782d7945e8e8c767d0a3a02e631404ad?method=download&shareKey=80274ac90bb84007d81f3bfa34157d4e" mode="widthFix" />
+            <view class="hw-t mtb-20">
                 <text>因为你能唤出我最真的那部分</text>
                 <text>因为你穿越我心灵的旷野</text>
                 <text>就像阳光穿透水晶般容易</text>
@@ -246,22 +262,22 @@
                 <text>而我心里最柔软的地方</text>
                 <text>却被你的光芒照的通亮</text>
             </view>
-            <image src="https://note.youdao.com/yws/api/personal/file/WEB0f5d68a80c02c17a64b55bdf709be4c7?method=download&shareKey=76e9b3886dc01c8d28577cd47160ba83"/>
-            <view class="h-t">
+            <image src="https://note.youdao.com/yws/api/personal/file/WEB0f5d68a80c02c17a64b55bdf709be4c7?method=download&shareKey=76e9b3886dc01c8d28577cd47160ba83" mode="widthFix" />
+            <view class="h-t mtb-20">
                 <text>我喜欢你</text>
                 <text>所以希望你被簇拥包围</text>
                 <text>所以你走的路要繁花盛开</text>
                 <text>要人声鼎沸</text>
             </view>
-            <image src="https://note.youdao.com/yws/api/personal/file/WEB4907b1b07958970b32d80910add5f045?method=download&shareKey=6e951e498ca0ab9a8e5505196938fcc1"/>
-            <view class="h-t">
+            <image src="https://note.youdao.com/yws/api/personal/file/WEB4907b1b07958970b32d80910add5f045?method=download&shareKey=6e951e498ca0ab9a8e5505196938fcc1" mode="widthFix" />
+            <view class="h-t mtb-20">
                 <text>我看见白日梦的尽头是你</text>
                 <text>从此天光大亮</text>
                 <text>你是我全部的渴望与幻想</text>
             </view>
-            <image src="https://note.youdao.com/yws/api/personal/file/WEBc8d239c0103a5ca078b211df7aa7e023?method=download&shareKey=21615e4887ef5e9596b94c8c8eb098c5" />
-            <image src="https://note.youdao.com/yws/api/personal/file/WEBcc48d595e215b72570090fe8af8d7a76?method=download&shareKey=43ce27ac85eb551d62192dddfb64b8c0" />
-            <view class="h-t">
+            <image src="https://note.youdao.com/yws/api/personal/file/WEBcc48d595e215b72570090fe8af8d7a76?method=download&shareKey=43ce27ac85eb551d62192dddfb64b8c0"  mode="widthFix" />
+            <image src="https://note.youdao.com/yws/api/personal/file/WEBc8d239c0103a5ca078b211df7aa7e023?method=download&shareKey=21615e4887ef5e9596b94c8c8eb098c5"  mode="widthFix" />
+            <view class="h-t mtb-20">
                 <text>深深的话</text>
                 <text>我们浅浅地说</text>
                 <text>长长的路</text>
@@ -275,21 +291,35 @@
         <view class="tit">
             <text class="tit-name">婚礼信息</text>
         </view>
-        <view class="data-box">
-            <map class="map" latitude="{{address.point[0]}}" longitude="{{address.point[1]}}" enable-3D="true" enable-building="true" markers="{{[address.marker]}}" show-location="true" catchregionchange="changeno"></map>
-            <view class="map_line"></view>
-        </view>
-        <view class="header">
-            <image src="../../images/map.svg" />
-            <text class="title address">{{address.local}}</text>
-        </view>
         <view class="header">
             <image src="../../images/time.svg" />
             <text class="title tel">{{address.time}}</text>
         </view>
         <view class="header">
-            <image src="../../images/tel.svg" />
-            <text class="title tel">{{address.tel}}</text>
+            <image src="../../images/map.svg" />
+            <text class="title address">{{address.local}}</text>
+        </view>
+        <view class="data-box">
+            <map class="map" latitude="{{address.point[0]}}" longitude="{{address.point[1]}}" enable-3D="true" enable-building="true" markers="{{[address.marker]}}" show-location="true" catchregionchange="changeno"></map>
+            <view class="map_line"></view>
+        </view>
+        <view class="info">
+            <text class="title">新人的碎碎念:</text>
+            <view class="content">
+                <text>如果你身在不同的城市</text>    
+                <text>或因繁忙的工作无法到达仪式现场</text>
+                <text>没有关系 我们已经收到您的祝福</text>
+                <text>祝 万事胜意~ ❤️</text>
+            </view>
+            <view class="content">
+                <text>如果您拍摄了新人(主要是新娘)的照片</text>    
+                <text>麻烦把她P的美一点~♥️</text>
+            </view>
+            <view class="content">
+                <text>疫情期间要佩戴好口罩哦~</text>    
+                <text>准备好您的好心情和好胃口</text>
+                <text>开开心心赴约吧~</text>
+            </view>
         </view>
     </view>
   </view>
